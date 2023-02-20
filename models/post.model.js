@@ -1,4 +1,6 @@
+const { Timestamp } = require('mongodb')
 const mongoose = require('mongoose')
+const Scheme = mongoose.Schema;
 
 const postSchema = new mongoose.Schema({
     user_id: {
@@ -17,7 +19,7 @@ const postSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    body: {
+    image_body: {
         type: String,
         required:true
     }
